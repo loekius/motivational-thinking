@@ -17,7 +17,7 @@ import define_data as dd
 
 def barchart(pers_char,lifestyle):
     df = dd.df
-    df = df[df.Margins.str.contains('Value')]
+#    df = df[df.Margins.str.contains('Value')]      #see define_data.py
     df = df[df.CharacteristicsPersons.str.contains(pers_char)]
     df = df[['CharacteristicsPersons','Periods',lifestyle]]
     df = df.set_index(['CharacteristicsPersons','Periods'])

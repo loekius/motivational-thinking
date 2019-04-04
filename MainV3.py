@@ -14,7 +14,7 @@ import barchart as bc
 #import plotly.offline as py
 
 def def_variables():
-    ls_input = input("""What lifestyle do you want to analyse?
+    ls_input = input("""What lifestyle habit do you want to analyze?
                      1\tSmoking
                      2\tDrinking""")
     if ls_input == "1":
@@ -22,6 +22,7 @@ def def_variables():
     pc_input = input('What personal characteristics do you want to analyze')    
     if pc_input == "1":
         pers_char = "Wealth"
+    
 print(def_variables())
 
 # run program in loop until user chooses to exit
@@ -35,7 +36,7 @@ while True:
     # evaluate user choice and proceed accordingly
     if choice == "1":
 #        def_variables()
-        print(bc.barchart("Wealth","Smokers_1"))
+        bc.barchart("Wealth","Smokers_1")
     elif choice == "2":
         print("fuckyoupython")
     elif choice == "3":
