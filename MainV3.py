@@ -14,14 +14,23 @@ import barchart as bc
 #import plotly.offline as py
 
 def def_variables():
-    ls_input = input("""What lifestyle habit do you want to analyze?
+    ls_input = input("""What lifestyle do you want to analyse?
                      1\tSmoking
-                     2\tDrinking""")
+                     2\tDrinking
+                     3\tDrug use
+                     4\tActivity""")
     if ls_input == "1":
         lifestyle = 'Smokers_1'
+    if ls_input == "2":
+        lifestyle = 'Drinkers_17'    
+    if ls_input == "3":
+        lifestyle = ('LastMonth_44','LastYear_45','Ever_46')
+    if ls_input == "4":
+        lifestyle = 'WeeklySporter_67'
     pc_input = input('What personal characteristics do you want to analyze')    
     if pc_input == "1":
         pers_char = "Wealth"
+
     
 print(def_variables())
 
